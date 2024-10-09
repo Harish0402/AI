@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.bg{
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:whitesmoke;
+    
+}    
+
+
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color:rgb(45, 146, 146);
+}
+
+
+
+nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+nav > div {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    background-color: #FC5C7D;
+    padding: 15px;
+    border-radius: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    padding-right: 30px;
+    font-weight: bolder;
+    color:chartreuse;
+}
+
+a:hover{
+    font-size: x-large;
+    transition-duration: 3s;
+    transition-property: font-size;
+    transition-timing-function: linear;
+    transition-delay: 2;
+    transition:font-size 3s linear 2;
+}
+
+.desc{
+    padding-top: 100px;
+    margin-left: 10px;
+}
+
+.desc p {
+    font-size: large;
+    word-spacing: 8px;
+    
+}
+
+.desc > ul{
+    margin-left: 40px;
+}
+
+
+
+h2{
+    text-decoration-line: underline;
+}
+
+h2:hover{
+    font-size: 50px;
+    color:#f30b0b;
+    transition-duration: 3s;
+    transition-property: font-size color;
+    transition-timing-function: linear;
+    transition-delay: 2;
+    transition:font-size 3s linear 2;
+
+}
+
+.flex-box{
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+}
+
+.flex{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    border-top: 2px solid black;
+    font-size: 34px;
+}
+
+.flex-box div{
+    margin-top: 50px;
+    flex: 0 0 350px;
+    font-size: large;
+    word-spacing: 8px;
+    background-color:chartreuse;
+    border-radius: 20px;
+    padding: 25px;
+    color: black;
+}
+
+.flex-box li {
+    margin-left: 50px;
+}
+
+h3{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.grid{
+    text-align: center;
+    padding-top: 50px;
+    border-top: 2px solid black;
+    font-size: 34px;
+}
+
+.head{
+    grid-area: head;
+    background-image: url(https://cdn-bdfbc.nitrocdn.com/mpQHUpeCagYMmyclYzWrEuJOvwEOajTJ/assets/images/optimized/rev-0ae5705/www.unimedia.tech/wp-content/uploads/2023/12/openAI-chat-gpt-1-4-1024x623.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px solid blue;
+
+}
+
+.section{
+    grid-area: section;
+    border: 10px solid blue;
+    padding: 10px;
+}
+
+.aside{
+    grid-area: aside;
+    border: 10px solid blue;
+    padding: 10px;
+}
+
+.menu{
+    grid-area: menu;
+    border: 10px solid blue;
+    padding: 10px;
+}
+
+.grid-box{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fill,25vw);
+    grid-template-rows: repeat(3,auto);
+
+grid-template-areas:
+"head head section"
+"head head aside"
+"menu menu menu"
+;
+
+
+text-align: center;
+margin: 150px;
+
+}
+
+.gemini{
+    grid-area: gem;
+}
+
+.meta{
+    grid-area: meta;
+}
+
+.deep{
+    grid-area: deep;
+}
+
+.aws{
+    grid-area: aws;
+}
+
+.ask{
+    grid-area: ask;
+}
+
+.gallery{
+    /* display: grid;
+    grid-template-columns: repeat(5,20vw);
+    grid-template-rows: repeat(2,30vh);
+    grid-template-areas: 
+    "gem meta deep aws ask";
+    gap: 3px; */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery > img{
+    width: 250px;
+    height: 200px;
+
+}
+
+.stack{
+
+    text-align: center;
+    padding-top: 50px;
+    border-top: 2px solid black;
+    font-size: 34px;
+}
+
+
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #FFCC70;
+    color:brown;
+}
+
+.gallery > img:hover{
+    width: 300px;
+    height: 280px;
+}
+
+.facebook{
+    width: 25px;
+    position: absolute;
+    right: 200px;
+
+}
+
+.pin{
+    width: 25px;
+    position: absolute;
+    right: 170px;
+}
+
+.link{
+    width: 25px;
+    position: absolute;
+    right: 140px;
+}
